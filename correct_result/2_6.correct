@@ -1,0 +1,243 @@
+Pager started with 4 physical memory pages
+vm_create	(191913, 201260)
+vm_create returned 0
+vm_switch	(201260)
+					returning to (201260) with pages:
+vm_map		(201260)	0x0	0
+vm_map returned 0x600000000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x0
+vm_fault	(201260)	0x600000000	write
+vm_fault returned 0
+					returning to (201260) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_map		(201260)	0x600000000	0
+vm_map returned 0x600010000
+					returning to (201260) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_create	(201260, 201261)
+vm_create returned 0
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x1
+vm_fault	(201260)	0x60001ffff	write
+file_read	lampson83.txt	0
+vm_fault returned 0
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+vm_map		(201260)	0x0	0
+vm_map returned 0x600020000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+					r	vpage 0x60002	ppage 0x0
+vm_map		(201260)	0x0	0
+vm_map returned 0x600030000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+					r	vpage 0x60002	ppage 0x0
+					r	vpage 0x60003	ppage 0x0
+vm_fault	(201260)	0x60002fffe	write
+vm_fault returned 0
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+					rw	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x0
+vm_fault	(201260)	0x600030000	write
+file_write	<swap>	0
+vm_fault returned 0
+					returning to (201260) with pages:
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	0
+file_write	lampson83.txt	0
+file_read	<swap>	0
+vm_map returned 0x600040000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	1
+vm_map returned 0x600050000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	2
+vm_map returned 0x600060000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	3
+vm_map returned 0x600070000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	4
+vm_map returned 0x600080000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	5
+vm_map returned 0x600090000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	6
+vm_map returned 0x6000a0000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	7
+vm_map returned 0x6000b0000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	8
+vm_map returned 0x6000c0000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	9
+vm_map returned 0x6000d0000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	10
+vm_map returned 0x6000e0000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	11
+vm_map returned 0x6000f0000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	12
+vm_map returned 0x600100000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	13
+vm_map returned 0x600110000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	14
+vm_map returned 0x600120000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(201260)	0x600000000	15
+vm_map returned 0x600130000
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60003	ppage 0x1
+vm_create	(201260, 201262)
+vm_create returned 0
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					r	vpage 0x60003	ppage 0x1
+vm_fault	(201260)	0x60004fff6	write
+file_write	<swap>	1
+file_read	lampson83.txt	0
+vm_fault returned 0
+					returning to (201260) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					r	vpage 0x60003	ppage 0x1
+					rw	vpage 0x60004	ppage 0x3
+vm_switch	(201261)
+					returning to (201261) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+vm_map		(201261)	0x600000000	0
+vm_map returned 0x600020000
+					returning to (201261) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x3
+vm_map		(201261)	0x0	0
+vm_map returned 0x600030000
+					returning to (201261) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x0
+vm_map		(201261)	0x0	0
+vm_map returned 0x600040000
+					returning to (201261) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x0
+					r	vpage 0x60004	ppage 0x0
+vm_fault	(201261)	0x60003fffc	write
+file_write	<swap>	2
+vm_fault returned 0
+					returning to (201261) with pages:
+					rw	vpage 0x60003	ppage 0x1
+					r	vpage 0x60004	ppage 0x0
+vm_fault	(201261)	0x600040000	write
+vm_fault returned 0
+					returning to (201261) with pages:
+					rw	vpage 0x60003	ppage 0x1
+					rw	vpage 0x60004	ppage 0x2
+vm_create	(201261, 201263)
+vm_create returned 0
+					returning to (201261) with pages:
+					r	vpage 0x60003	ppage 0x1
+					r	vpage 0x60004	ppage 0x2
+vm_fault	(201261)	0x60003ffff	write
+file_write	lampson83.txt	0
+vm_fault returned 0
+					returning to (201261) with pages:
+					rw	vpage 0x60003	ppage 0x3
+					r	vpage 0x60004	ppage 0x2
+vm_fault	(201261)	0x600040002	write
+file_write	<swap>	3
+vm_fault returned 0
+					returning to (201261) with pages:
+					rw	vpage 0x60004	ppage 0x1
+vm_fault	(201261)	0x60003ffe0	read
+vm_fault returned 0
+					returning to (201261) with pages:
+					rw	vpage 0x60003	ppage 0x3
+					rw	vpage 0x60004	ppage 0x1
+vm_switch	(201262)
+					returning to (201262) with pages:
+vm_switch	(201260)
+					returning to (201260) with pages:
+vm_switch	(201263)
+					returning to (201263) with pages:
+vm_fault	(201263)	0x60003ffe0	read
+file_write	<swap>	4
+file_read	<swap>	3
+vm_fault returned 0
+					returning to (201263) with pages:
+					r	vpage 0x60003	ppage 0x2
+vm_fault	(201263)	0x600040000	read
+file_write	<swap>	5
+file_read	<swap>	4
+vm_fault returned 0
+					returning to (201263) with pages:
+					r	vpage 0x60004	ppage 0x3
+vm_fault	(201263)	0x60003ffff	read
+vm_fault returned 0
+					returning to (201263) with pages:
+					r	vpage 0x60003	ppage 0x2
+					r	vpage 0x60004	ppage 0x3
+vm_fault	(201263)	0x600040000	write
+vm_fault returned 0
+					returning to (201263) with pages:
+					r	vpage 0x60003	ppage 0x2
+					rw	vpage 0x60004	ppage 0x3
+vm_destroy	(201263)
+vm_switch	(201261)
+					returning to (201261) with pages:
+vm_destroy	(201261)
+vm_switch	(201262)
+					returning to (201262) with pages:
+vm_destroy	(201262)
+vm_switch	(201260)
+					returning to (201260) with pages:
+vm_destroy	(201260)

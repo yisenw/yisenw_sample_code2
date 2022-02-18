@@ -1,0 +1,289 @@
+Pager started with 4 physical memory pages
+vm_create	(191913, 202839)
+vm_create returned 0
+vm_switch	(202839)
+					returning to (202839) with pages:
+vm_map		(202839)	0x0	0
+vm_map returned 0x600000000
+					returning to (202839) with pages:
+					r	vpage 0x60000	ppage 0x0
+vm_fault	(202839)	0x600000000	write
+vm_fault returned 0
+					returning to (202839) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_map		(202839)	0x600000000	0
+vm_map returned 0x600010000
+					returning to (202839) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_create	(202839, 202841)
+vm_create returned 0
+					returning to (202839) with pages:
+					r	vpage 0x60000	ppage 0x1
+vm_fault	(202839)	0x60001ffff	write
+file_read	lampson83.txt	0
+vm_fault returned 0
+					returning to (202839) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+vm_map		(202839)	0x0	0
+vm_map returned 0x600020000
+					returning to (202839) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+					r	vpage 0x60002	ppage 0x0
+vm_map		(202839)	0x0	0
+vm_map returned 0x600030000
+					returning to (202839) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+					r	vpage 0x60002	ppage 0x0
+					r	vpage 0x60003	ppage 0x0
+vm_fault	(202839)	0x60002fffe	write
+vm_fault returned 0
+					returning to (202839) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+					rw	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x0
+vm_fault	(202839)	0x600030000	write
+file_write	<swap>	0
+vm_fault returned 0
+					returning to (202839) with pages:
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	0
+vm_map returned 0x600040000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	1
+vm_map returned 0x600050000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	2
+vm_map returned 0x600060000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	3
+vm_map returned 0x600070000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	4
+vm_map returned 0x600080000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	5
+vm_map returned 0x600090000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	6
+vm_map returned 0x6000a0000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	7
+vm_map returned 0x6000b0000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	8
+vm_map returned 0x6000c0000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	9
+vm_map returned 0x6000d0000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	10
+vm_map returned 0x6000e0000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	11
+vm_map returned 0x6000f0000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	12
+vm_map returned 0x600100000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	13
+vm_map returned 0x600110000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	14
+vm_map returned 0x600120000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_map		(202839)	0x60002fffe	15
+vm_map returned 0x600130000
+					returning to (202839) with pages:
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+vm_create	(202839, 202870)
+vm_create returned 0
+					returning to (202839) with pages:
+					r	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x1
+vm_fault	(202839)	0x60004fff6	write
+file_write	lampson83.txt	0
+file_read	data4.bin	0
+vm_fault returned 0
+					returning to (202839) with pages:
+					r	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x1
+					rw	vpage 0x60004	ppage 0x2
+vm_fault	(202839)	0x60007fff6	write
+file_write	<swap>	1
+file_read	data4.bin	3
+vm_fault returned 0
+					returning to (202839) with pages:
+					rw	vpage 0x60007	ppage 0x3
+vm_fault	(202839)	0x6000dfff6	write
+file_write	<swap>	2
+file_read	data4.bin	9
+vm_fault returned 0
+					returning to (202839) with pages:
+					rw	vpage 0x60007	ppage 0x3
+					rw	vpage 0x6000d	ppage 0x1
+vm_fault	(202839)	0x60004fff6	read
+vm_fault returned 0
+					returning to (202839) with pages:
+					rw	vpage 0x60004	ppage 0x2
+					rw	vpage 0x60007	ppage 0x3
+					rw	vpage 0x6000d	ppage 0x1
+vm_switch	(202841)
+					returning to (202841) with pages:
+vm_map		(202841)	0x600000000	0
+file_write	data4.bin	0
+file_read	<swap>	0
+vm_map returned 0x600020000
+					returning to (202841) with pages:
+					r	vpage 0x60000	ppage 0x2
+vm_fault	(202841)	0x60002ffff	write
+file_write	data4.bin	3
+file_read	lampson83.txt	0
+vm_fault returned 0
+					returning to (202841) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x3
+vm_map		(202841)	0x0	0
+vm_map returned 0x600030000
+					returning to (202841) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x0
+vm_map		(202841)	0x0	0
+vm_map returned 0x600040000
+					returning to (202841) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x3
+					r	vpage 0x60003	ppage 0x0
+					r	vpage 0x60004	ppage 0x0
+vm_fault	(202841)	0x60003fffc	write
+file_write	data4.bin	9
+vm_fault returned 0
+					returning to (202841) with pages:
+					r	vpage 0x60000	ppage 0x2
+					rw	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x3
+					rw	vpage 0x60003	ppage 0x1
+					r	vpage 0x60004	ppage 0x0
+vm_fault	(202841)	0x600040000	write
+vm_fault returned 0
+					returning to (202841) with pages:
+					rw	vpage 0x60004	ppage 0x2
+vm_create	(202841, 202892)
+vm_create returned 0
+					returning to (202841) with pages:
+					r	vpage 0x60004	ppage 0x2
+vm_fault	(202841)	0x60003ffff	write
+file_write	lampson83.txt	0
+vm_fault returned 0
+					returning to (202841) with pages:
+					rw	vpage 0x60003	ppage 0x3
+					r	vpage 0x60004	ppage 0x2
+vm_fault	(202841)	0x600040002	write
+file_write	<swap>	3
+vm_fault returned 0
+					returning to (202841) with pages:
+					rw	vpage 0x60004	ppage 0x1
+vm_fault	(202841)	0x60003ffe0	read
+vm_fault returned 0
+					returning to (202841) with pages:
+					rw	vpage 0x60003	ppage 0x3
+					rw	vpage 0x60004	ppage 0x1
+vm_switch	(202870)
+					returning to (202870) with pages:
+vm_fault	(202870)	0x60004fff6	read
+file_write	<swap>	4
+file_read	data4.bin	0
+vm_fault returned 0
+					returning to (202870) with pages:
+					r	vpage 0x60004	ppage 0x2
+vm_fault	(202870)	0x6000dfff6	read
+file_write	<swap>	5
+file_read	data4.bin	9
+vm_fault returned 0
+					returning to (202870) with pages:
+					r	vpage 0x6000d	ppage 0x3
+vm_fault	(202870)	0x60007fff6	read
+file_write	<swap>	6
+file_read	data4.bin	3
+vm_fault returned 0
+					returning to (202870) with pages:
+					r	vpage 0x60007	ppage 0x1
+					r	vpage 0x6000d	ppage 0x3
+vm_fault	(202870)	0x60010fff6	write
+file_read	data4.bin	12
+vm_fault returned 0
+					returning to (202870) with pages:
+					r	vpage 0x60007	ppage 0x1
+					r	vpage 0x6000d	ppage 0x3
+					rw	vpage 0x60010	ppage 0x2
+vm_switch	(202839)
+					returning to (202839) with pages:
+					r	vpage 0x60007	ppage 0x1
+					r	vpage 0x6000d	ppage 0x3
+					rw	vpage 0x60010	ppage 0x2
+vm_switch	(202892)
+					returning to (202892) with pages:
+vm_fault	(202892)	0x60003ffe0	read
+file_read	<swap>	3
+vm_fault returned 0
+					returning to (202892) with pages:
+					r	vpage 0x60003	ppage 0x3
+vm_fault	(202892)	0x600040000	read
+file_read	<swap>	4
+vm_fault returned 0
+					returning to (202892) with pages:
+					r	vpage 0x60003	ppage 0x3
+					r	vpage 0x60004	ppage 0x1
+vm_fault	(202892)	0x600040000	write
+vm_fault returned 0
+					returning to (202892) with pages:
+					r	vpage 0x60003	ppage 0x3
+					rw	vpage 0x60004	ppage 0x1
+vm_destroy	(202892)
+vm_switch	(202841)
+					returning to (202841) with pages:
+vm_destroy	(202841)
+vm_switch	(202870)
+					returning to (202870) with pages:
+vm_destroy	(202870)
+vm_switch	(202839)
+					returning to (202839) with pages:
+vm_destroy	(202839)

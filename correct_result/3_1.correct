@@ -1,0 +1,24 @@
+Pager started with 4 physical memory pages
+vm_create	(191913, 206663)
+vm_create returned 0
+vm_switch	(206663)
+					returning to (206663) with pages:
+vm_map		(206663)	0x0	0
+vm_map returned 0x600000000
+					returning to (206663) with pages:
+					r	vpage 0x60000	ppage 0x0
+vm_fault	(206663)	0x600000000	write
+vm_fault returned 0
+					returning to (206663) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_map		(206663)	0x600000000	0
+vm_map returned 0x600010000
+					returning to (206663) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_fault	(206663)	0x600010000	read
+file_read	lampson83.txt	0
+vm_fault returned 0
+					returning to (206663) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x2
+vm_destroy	(206663)

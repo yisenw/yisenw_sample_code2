@@ -1,0 +1,55 @@
+Pager started with 4 physical memory pages
+vm_create	(191913, 198359)
+vm_create returned 0
+vm_switch	(198359)
+					returning to (198359) with pages:
+vm_map		(198359)	0x0	0
+vm_map returned 0x600000000
+					returning to (198359) with pages:
+					r	vpage 0x60000	ppage 0x0
+vm_fault	(198359)	0x600000000	write
+vm_fault returned 0
+					returning to (198359) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_map		(198359)	0x600000000	10
+vm_map returned 0x600010000
+					returning to (198359) with pages:
+					rw	vpage 0x60000	ppage 0x1
+vm_create	(198359, 198360)
+vm_create returned 0
+					returning to (198359) with pages:
+					r	vpage 0x60000	ppage 0x1
+vm_map		(198359)	0x600000000	0
+vm_map returned 0x600020000
+					returning to (198359) with pages:
+					r	vpage 0x60000	ppage 0x1
+vm_fault	(198359)	0x600020000	write
+file_read	data1.bin	0
+vm_fault returned 0
+					returning to (198359) with pages:
+					r	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60002	ppage 0x2
+vm_fault	(198359)	0x6000101f4	read
+file_read	data1.bin	10
+vm_fault returned 0
+					returning to (198359) with pages:
+					r	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x2
+vm_switch	(198360)
+					returning to (198360) with pages:
+					r	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x3
+vm_map		(198360)	0x600000000	0
+vm_map returned 0x600020000
+					returning to (198360) with pages:
+					r	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x2
+vm_destroy	(198360)
+vm_switch	(198359)
+					returning to (198359) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x3
+					rw	vpage 0x60002	ppage 0x2
+vm_destroy	(198359)

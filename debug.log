@@ -1,0 +1,359 @@
+
+>>VM_INIT is called with 4,100
+######## physical page table #############resident_page_count 1
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+------------ swap slot table -------------swap page count 0
+block	referenced_pages
+
+
+>>VM CREATE 36,1db
+######## physical page table #############resident_page_count 1
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+------------ swap slot table -------------swap page count 0
+block	referenced_pages
+
+switch from ffffffff
+switch to 1db
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+
+>>VM_MAP calls with nullptr: 1 block 0
+alloc_swap_page called! swap page count 0 out of 100
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 1
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,0> 
+------------ swap slot table -------------swap page count 1
+block	referenced_pages
+
+
+>>VM_MAP calls with nullptr: 1 block 0
+alloc_swap_page called! swap page count 1 out of 100
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	1		0		1	1		nullptr 	ffffffff
+1	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 1
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,0> <1db,1> 
+------------ swap slot table -------------swap page count 2
+block	referenced_pages
+
+
+>>VM FAULT called with write?1 addr 60000fffc
+fault_handler vpn:0 write? 1
+copy_and_change_pointer called with vpn:0
+remap vpn=0 from ppn=0 to ppn=1
+set ppn 1 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	1		1		1	1		nullptr 	ffffffff
+1	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 2
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,1> 
+1	1	1		0		ffffffff	1	<1db,0> 
+------------ swap slot table -------------swap page count 2
+block	referenced_pages
+
+
+>>VM FAULT called with write?1 addr 600010000
+fault_handler vpn:1 write? 1
+copy_and_change_pointer called with vpn:1
+remap vpn=1 from ppn=0 to ppn=2
+set ppn 2 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	1		1		1	1		nullptr 	ffffffff
+1	2	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 3
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	1	1		0		ffffffff	1	<1db,0> 
+2	1	1		0		ffffffff	1	<1db,1> 
+------------ swap slot table -------------swap page count 2
+block	referenced_pages
+
+
+>>VM_MAP calls with nullptr: 1 block 0
+alloc_swap_page called! swap page count 2 out of 100
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	1		1		1	1		nullptr 	ffffffff
+1	2	1		1		1	1		nullptr 	ffffffff
+2	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 3
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,2> 
+1	1	1		0		ffffffff	1	<1db,0> 
+2	1	1		0		ffffffff	1	<1db,1> 
+------------ swap slot table -------------swap page count 3
+block	referenced_pages
+
+
+>>VM_MAP calls with nullptr: 1 block 0
+alloc_swap_page called! swap page count 3 out of 100
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	1		1		1	1		nullptr 	ffffffff
+1	2	1		1		1	1		nullptr 	ffffffff
+2	0	1		0		1	1		nullptr 	ffffffff
+3	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 3
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,2> <1db,3> 
+1	1	1		0		ffffffff	1	<1db,0> 
+2	1	1		0		ffffffff	1	<1db,1> 
+------------ swap slot table -------------swap page count 4
+block	referenced_pages
+
+
+>>VM FAULT called with write?1 addr 60002fffc
+fault_handler vpn:2 write? 1
+copy_and_change_pointer called with vpn:2
+remap vpn=2 from ppn=0 to ppn=3
+set ppn 3 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	1		1		1	1		nullptr 	ffffffff
+1	2	1		1		1	1		nullptr 	ffffffff
+2	3	1		1		1	1		nullptr 	ffffffff
+3	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,3> 
+1	1	1		0		ffffffff	1	<1db,0> 
+2	1	1		0		ffffffff	1	<1db,1> 
+3	1	1		0		ffffffff	1	<1db,2> 
+------------ swap slot table -------------swap page count 4
+block	referenced_pages
+
+
+>>VM FAULT called with write?1 addr 600030000
+fault_handler vpn:3 write? 1
+copy_and_change_pointer called with vpn:3
+Evict
+victim: ppn=1
+<1db,0> 
+remap vpn=3 from ppn=0 to ppn=1
+set ppn 1 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	0		0		1	0		nullptr 	0
+1	2	0		0		1	1		nullptr 	ffffffff
+2	3	0		0		1	1		nullptr 	ffffffff
+3	1	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	1	1		0		ffffffff	1	<1db,3> 
+2	1	0		0		ffffffff	1	<1db,1> 
+3	1	0		0		ffffffff	1	<1db,2> 
+------------ swap slot table -------------swap page count 4
+block	referenced_pages
+0	<1db,0>
+
+>>VM FAULT called with write?0 addr 60002ffe0
+fault_handler vpn:2 write? 0
+set ppn 3 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	0		0		1	0		nullptr 	0
+1	2	0		0		1	1		nullptr 	ffffffff
+2	3	1		1		1	1		nullptr 	ffffffff
+3	1	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	1	1		0		ffffffff	1	<1db,3> 
+2	1	0		0		ffffffff	1	<1db,1> 
+3	1	1		0		ffffffff	1	<1db,2> 
+------------ swap slot table -------------swap page count 4
+block	referenced_pages
+0	<1db,0>
+
+>>VM_MAP calls with nullptr: 1 block 0
+alloc_swap_page called! swap page count 4 out of 100
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	0		0		1	0		nullptr 	0
+1	2	0		0		1	1		nullptr 	ffffffff
+2	3	1		1		1	1		nullptr 	ffffffff
+3	1	1		1		1	1		nullptr 	ffffffff
+4	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,4> 
+1	1	1		0		ffffffff	1	<1db,3> 
+2	1	0		0		ffffffff	1	<1db,1> 
+3	1	1		0		ffffffff	1	<1db,2> 
+------------ swap slot table -------------swap page count 5
+block	referenced_pages
+0	<1db,0>
+
+>>VM_MAP calls with nullptr: 1 block 0
+alloc_swap_page called! swap page count 5 out of 100
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	0		0		1	0		nullptr 	0
+1	2	0		0		1	1		nullptr 	ffffffff
+2	3	1		1		1	1		nullptr 	ffffffff
+3	1	1		1		1	1		nullptr 	ffffffff
+4	0	1		0		1	1		nullptr 	ffffffff
+5	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,4> <1db,5> 
+1	1	1		0		ffffffff	1	<1db,3> 
+2	1	0		0		ffffffff	1	<1db,1> 
+3	1	1		0		ffffffff	1	<1db,2> 
+------------ swap slot table -------------swap page count 6
+block	referenced_pages
+0	<1db,0>
+
+>>VM FAULT called with write?1 addr 60004fffc
+fault_handler vpn:4 write? 1
+copy_and_change_pointer called with vpn:4
+Evict
+victim: ppn=2
+<1db,1> 
+remap vpn=4 from ppn=0 to ppn=2
+set ppn 2 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	0		0		1	0		nullptr 	0
+1	0	0		0		1	0		nullptr 	1
+2	3	1		1		1	1		nullptr 	ffffffff
+3	1	1		1		1	1		nullptr 	ffffffff
+4	2	1		1		1	1		nullptr 	ffffffff
+5	0	1		0		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> <1db,5> 
+1	1	1		0		ffffffff	1	<1db,3> 
+2	1	1		0		ffffffff	1	<1db,4> 
+3	1	1		0		ffffffff	1	<1db,2> 
+------------ swap slot table -------------swap page count 6
+block	referenced_pages
+0	<1db,0>1	<1db,1>
+
+>>VM FAULT called with write?1 addr 600050000
+fault_handler vpn:5 write? 1
+copy_and_change_pointer called with vpn:5
+Evict
+victim: ppn=3
+<1db,2> 
+remap vpn=5 from ppn=0 to ppn=3
+set ppn 3 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	0		0		1	0		nullptr 	0
+1	0	0		0		1	0		nullptr 	1
+2	0	0		0		1	0		nullptr 	2
+3	1	0		0		1	1		nullptr 	ffffffff
+4	2	0		0		1	1		nullptr 	ffffffff
+5	3	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	1	0		0		ffffffff	1	<1db,3> 
+2	1	0		0		ffffffff	1	<1db,4> 
+3	1	1		0		ffffffff	1	<1db,5> 
+------------ swap slot table -------------swap page count 6
+block	referenced_pages
+0	<1db,0>1	<1db,1>2	<1db,2>
+
+>>VM FAULT called with write?0 addr 60004ffe0
+fault_handler vpn:4 write? 0
+set ppn 2 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	0	0		0		1	0		nullptr 	0
+1	0	0		0		1	0		nullptr 	1
+2	0	0		0		1	0		nullptr 	2
+3	1	0		0		1	1		nullptr 	ffffffff
+4	2	1		1		1	1		nullptr 	ffffffff
+5	3	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	1	0		0		ffffffff	1	<1db,3> 
+2	1	1		0		ffffffff	1	<1db,4> 
+3	1	1		0		ffffffff	1	<1db,5> 
+------------ swap slot table -------------swap page count 6
+block	referenced_pages
+0	<1db,0>1	<1db,1>2	<1db,2>
+
+>>VM FAULT called with write?0 addr 60000ffff
+fault_handler vpn:0 write? 0
+RESTORE: vpn0
+Evict
+victim: ppn=1
+<1db,3> 
+alloc physical page 1 in mem
+read from disk  block 0
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	0		0		1	1		nullptr 	0
+1	0	0		0		1	0		nullptr 	1
+2	0	0		0		1	0		nullptr 	2
+3	0	0		0		1	0		nullptr 	3
+4	2	1		1		1	1		nullptr 	ffffffff
+5	3	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	0	1		1		0	1	<1db,0> 
+2	1	1		0		ffffffff	1	<1db,4> 
+3	1	1		0		ffffffff	1	<1db,5> 
+------------ swap slot table -------------swap page count 6
+block	referenced_pages
+0	<1db,0>1	<1db,1>2	<1db,2>3	<1db,3>
+set ppn 1 evict ref to true
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	1		0		1	1		nullptr 	0
+1	0	0		0		1	0		nullptr 	1
+2	0	0		0		1	0		nullptr 	2
+3	0	0		0		1	0		nullptr 	3
+4	2	1		1		1	1		nullptr 	ffffffff
+5	3	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	0	1		1		0	1	<1db,0> 
+2	1	1		0		ffffffff	1	<1db,4> 
+3	1	1		0		ffffffff	1	<1db,5> 
+------------ swap slot table -------------swap page count 6
+block	referenced_pages
+0	<1db,0>1	<1db,1>2	<1db,2>3	<1db,3>
+>>VM_DESTROY
+destroy_current_process curret_id=1db
+====== virtual page table for 1db===========
+vpn	ppage	read_enable	write_enable	valid	resident	filename	block_num
+0	1	1		0		1	1		nullptr 	0
+1	0	0		0		1	0		nullptr 	1
+2	0	0		0		1	0		nullptr 	2
+3	0	0		0		1	0		nullptr 	3
+4	2	1		1		1	1		nullptr 	ffffffff
+5	3	1		1		1	1		nullptr 	ffffffff
+######## physical page table #############resident_page_count 4
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+1	0	1		1		0	1	<1db,0> 
+2	1	1		0		ffffffff	1	<1db,4> 
+3	1	1		0		ffffffff	1	<1db,5> 
+------------ swap slot table -------------swap page count 6
+block	referenced_pages
+0	<1db,0>1	<1db,1>2	<1db,2>3	<1db,3>
+Successfully destroyed process 0
+######## physical page table #############resident_page_count 1
+ppn	dirty	evict_ref	in_disk	filename	block_num	is_swap	referenced_pages
+0	0	0		0		ffffffff	1	<ffffffff,ffffffff> 
+------------ swap slot table -------------swap page count 0
+block	referenced_pages
+

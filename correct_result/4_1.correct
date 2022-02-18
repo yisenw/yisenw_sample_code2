@@ -1,0 +1,37 @@
+Pager started with 4 physical memory pages
+vm_create	(191913, 209720)
+vm_create returned 0
+vm_switch	(209720)
+					returning to (209720) with pages:
+vm_map		(209720)	0x0	0
+vm_map returned 0x600000000
+					returning to (209720) with pages:
+					r	vpage 0x60000	ppage 0x0
+vm_map		(209720)	0x0	0
+vm_map returned 0x600010000
+					returning to (209720) with pages:
+					r	vpage 0x60000	ppage 0x0
+					r	vpage 0x60001	ppage 0x0
+vm_fault	(209720)	0x60000fffe	write
+vm_fault returned 0
+					returning to (209720) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x0
+vm_fault	(209720)	0x600010000	write
+vm_fault returned 0
+					returning to (209720) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+vm_map		(209720)	0x60000fffe	0
+vm_map returned 0x600020000
+					returning to (209720) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+vm_fault	(209720)	0x600020000	write
+file_read	can_not_find.bin	0
+open: No such file or directory
+vm_fault returned -1
+					returning to (209720) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+vm_destroy	(209720)

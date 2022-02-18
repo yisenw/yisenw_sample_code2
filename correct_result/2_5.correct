@@ -1,0 +1,71 @@
+Pager started with 4 physical memory pages
+vm_create	(191913, 200936)
+vm_create returned 0
+vm_switch	(200936)
+					returning to (200936) with pages:
+vm_map		(200936)	0x0	0
+vm_map returned 0x600000000
+					returning to (200936) with pages:
+					r	vpage 0x60000	ppage 0x0
+vm_map		(200936)	0x0	0
+vm_map returned 0x600010000
+					returning to (200936) with pages:
+					r	vpage 0x60000	ppage 0x0
+					r	vpage 0x60001	ppage 0x0
+vm_fault	(200936)	0x60000fffc	write
+vm_fault returned 0
+					returning to (200936) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x0
+vm_fault	(200936)	0x600010000	write
+vm_fault returned 0
+					returning to (200936) with pages:
+					rw	vpage 0x60000	ppage 0x1
+					rw	vpage 0x60001	ppage 0x2
+vm_create	(200936, 200937)
+vm_create returned 0
+					returning to (200936) with pages:
+					r	vpage 0x60000	ppage 0x1
+					r	vpage 0x60001	ppage 0x2
+vm_fault	(200936)	0x60000ffff	write
+vm_fault returned 0
+					returning to (200936) with pages:
+					rw	vpage 0x60000	ppage 0x3
+					r	vpage 0x60001	ppage 0x2
+vm_fault	(200936)	0x600010002	write
+file_write	<swap>	0
+vm_fault returned 0
+					returning to (200936) with pages:
+					rw	vpage 0x60001	ppage 0x1
+vm_fault	(200936)	0x60000ffe0	read
+vm_fault returned 0
+					returning to (200936) with pages:
+					rw	vpage 0x60000	ppage 0x3
+					rw	vpage 0x60001	ppage 0x1
+vm_switch	(200937)
+					returning to (200937) with pages:
+vm_fault	(200937)	0x60000ffe0	read
+file_write	<swap>	1
+file_read	<swap>	0
+vm_fault returned 0
+					returning to (200937) with pages:
+					r	vpage 0x60000	ppage 0x2
+vm_fault	(200937)	0x600010000	read
+file_write	<swap>	2
+file_read	<swap>	1
+vm_fault returned 0
+					returning to (200937) with pages:
+					r	vpage 0x60001	ppage 0x3
+vm_fault	(200937)	0x60000ffff	read
+vm_fault returned 0
+					returning to (200937) with pages:
+					r	vpage 0x60000	ppage 0x2
+					r	vpage 0x60001	ppage 0x3
+vm_destroy	(200937)
+vm_switch	(200936)
+					returning to (200936) with pages:
+vm_fault	(200936)	0x600010000	read
+vm_fault returned 0
+					returning to (200936) with pages:
+					rw	vpage 0x60001	ppage 0x1
+vm_destroy	(200936)
